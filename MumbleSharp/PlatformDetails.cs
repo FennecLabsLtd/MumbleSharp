@@ -35,14 +35,22 @@ namespace MumbleSharp
     {
         static PlatformDetails()
         {
-            if (Directory.Exists("/Applications")
-                && Directory.Exists("/System")
-                && Directory.Exists("/Users")
-                && Directory.Exists("/Volumes"))
+            if (Environment.OSVersion.Platform == PlatformID.MacOSX)
+            {
                 IsMac = true;
-			if (Environment.OSVersion.Platform == PlatformID.Win32NT ||
-				Environment.OSVersion.Platform == PlatformID.Win32Windows)
-				IsWindows = true;
+            }
+            else if (Environment.OSVersion.Platform == PlatformID.Win32NT ||
+                Environment.OSVersion.Platform == PlatformID.Win32Windows)
+            {
+                IsWindows = true;
+            }
+            else if(Environment.OSVersion.Platform == PlatformID.Unix)
+            {
+                IsAndroid = true;
+            } else
+            {
+                IsiOS = true;
+            }
         }
 
         /// <summary>
@@ -55,5 +63,17 @@ namespace MumbleSharp
 		/// </summary>
 		/// <value><c>true</c> if is windows; otherwise, <c>false</c>.</value>
 		public static bool IsWindows { get; private set; }
+
+        /// <summary>
+        /// Gets if the current system is iOS
+        /// </summary>
+        /// <value><c>true</c> if is iOS; otherwise, <c>false</c>.</value>
+        public static bool IsiOS { get; private set; }
+
+        /// <summary>
+        /// Gets if the current system is Android
+        /// </summary>
+        /// <value><c>true</c> if is Android; otherwise, <c>false</c>.</value>
+        public static bool IsAndroid { get; private set; }
     }
 }

@@ -80,7 +80,7 @@ namespace MumbleSharp.Audio
             {
                 //Return silence
                 Array.Clear(buffer, 0, count);
-                return count;
+                return 0;
             }
 
             return readCount;
