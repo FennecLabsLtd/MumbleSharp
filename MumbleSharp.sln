@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MumbleSharp", "MumbleSharp\MumbleSharp.csproj", "{CCF6DB4F-D16F-45F3-920D-E265927BB430}"
 EndProject
@@ -27,9 +27,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{22EE29
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MumbleSharpTest", "MumbleSharpTest\MumbleSharpTest.csproj", "{1B8BCBE5-4C2E-4295-ABE8-3F63EB68033A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MumbleClient", "MumbleClient\MumbleClient.csproj", "{CE9C5569-39A8-498E-A03E-CA4C06D406B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MumbleClient", "MumbleClient\MumbleClient.csproj", "{CE9C5569-39A8-498E-A03E-CA4C06D406B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MumbleGuiClient", "MumbleGuiClient\MumbleGuiClient.csproj", "{8A9BA968-D7E3-4E2A-8D9E-488486BBE843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MumbleGuiClient", "MumbleGuiClient\MumbleGuiClient.csproj", "{8A9BA968-D7E3-4E2A-8D9E-488486BBE843}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,8 +37,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CCF6DB4F-D16F-45F3-920D-E265927BB430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCF6DB4F-D16F-45F3-920D-E265927BB430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF6DB4F-D16F-45F3-920D-E265927BB430}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{CCF6DB4F-D16F-45F3-920D-E265927BB430}.Debug|Any CPU.Build.0 = Debug|x64
 		{CCF6DB4F-D16F-45F3-920D-E265927BB430}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCF6DB4F-D16F-45F3-920D-E265927BB430}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B8BCBE5-4C2E-4295-ABE8-3F63EB68033A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
